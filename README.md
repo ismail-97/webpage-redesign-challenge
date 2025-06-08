@@ -1,7 +1,7 @@
 # frontend page redesign challenge
 ### The challenge is to redesign the following webpage to look completely different from the original page while keeping functionality intact.
 
-![image (1)](https://github.com/user-attachments/assets/ccde9813-d29e-4c36-917c-7253192f7365)
+![image (1)](https://github.com/user-attachments/assets/ce5a180a-2b38-4ea0-bbb1-350c60ba4263)
 
 
 ## Setup Instructions
