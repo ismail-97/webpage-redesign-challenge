@@ -25,7 +25,7 @@
    Navigate to: http://localhost:5173/select-skip
 
 
-## Technolgies used
+## Technologies used
 - React with TypeScript.
 - Bootstrap and custom CSS for styling and responsiveness.
 
