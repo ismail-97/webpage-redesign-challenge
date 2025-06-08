@@ -1,0 +1,11 @@
+
+
+body {
+  margin: 0;
+  background-color: #f8f9fa  !important;
+  /* color: white!important; */
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
