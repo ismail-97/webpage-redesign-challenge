@@ -33,6 +33,6 @@
 
 - Initial idea is using slider to show all availble skips, but this is somehow NOT COMPLETELY DIFFERENT as required.
 - Second idea is to show only one skip depending on user selection, but what if a user wants to compare between available skip options?
-- The FINAL design decition is to combine both ideas: 
+- The FINAL design decision is to combine both ideas: 
   1. The user select a prefered skip size.
   2. The selected skip is displayed with a comparison table with its closest skips.
