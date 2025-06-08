@@ -24,7 +24,7 @@
 4. **Open It in Browser using http://localhost:5173/select-skip**
 
 
-#Design Approach
+## Design Approach
 
 - First idea is using slider to show all availble skips, but this is somehow NOT COMPLETELY DIFFERENT as required.
 - Second idea is to show only one skip depending on user selection, but what if a user wants to compare between available skip options?
