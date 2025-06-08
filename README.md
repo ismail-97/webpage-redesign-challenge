@@ -36,3 +36,7 @@
 - The FINAL design decision is to combine both ideas: 
   1. The user select a prefered skip size.
   2. The selected skip is displayed with a comparison table with its closest skips.
+
+## This is how the new design looks like
+
+![Screenshot_6](https://github.com/user-attachments/assets/d8953008-bc9b-4cbd-bfca-845ebc5cc2e8)
