@@ -1,7 +1,7 @@
-import CheckCircle from "../iconComponents/CheckCircle";
-import XCircleIcon from "../iconComponents/XCircleIcon";
+
 import type { SkipType } from "../types";
-import NearestSkips from "./NearestSkips";
+import ClosestSkips from "./ClosestSkips";
+import { CheckCircleIcon, XCircleIcon } from "../iconComponents";
 
 interface Props {
     skip: SkipType;
@@ -26,11 +26,11 @@ const Skip = ({ skip, skips, setSkip }: Props) => {
             <div className="card-body pt-0 px-0 px-xl-4 main-card">
                 <h1 className="card-title p-0 mb-1">{skip.size} Yard Skip</h1>
                 <p className="opacity-50 mb-3">{skip.hire_period_days} day hire period</p>
-                <p className="mb-3">On-Road: {skip.allowed_on_road ? <CheckCircle/> : <XCircleIcon/>}</p>
-                <p className="mb-3">Heavy Waste: {skip.allows_heavy_waste ? <CheckCircle/> : <XCircleIcon/>} </p>
+                <p className="mb-3">On-Road: {skip.allowed_on_road ? <CheckCircleIcon/> : <XCircleIcon/>}</p>
+                <p className="mb-3">Heavy Waste: {skip.allows_heavy_waste ? <CheckCircleIcon/> : <XCircleIcon/>} </p>
                 <p className="price-text my-4">${skip.price_before_vat} </p>
                 <p className="text-primary mb-3 ">Not sure? Compare with other skips:</p>
-                <NearestSkips currentSkip={skip} skips={skips} setSkip={setSkip} />
+                <ClosestSkips currentSkip={skip} skips={skips} setSkip={setSkip} />
 
             </div>
 

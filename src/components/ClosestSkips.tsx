@@ -1,6 +1,6 @@
 import type { SkipType } from "../types";
-import CheckCircle from "../iconComponents/CheckCircle";
-import XCircleIcon from "../iconComponents/XCircleIcon";
+import { CheckCircleIcon, XCircleIcon } from "../iconComponents";
+
 
 interface CandidateSkipProps {
     skip: SkipType;
@@ -13,20 +13,20 @@ const CandidateSkip = ({skip, setSkip}: CandidateSkipProps) => {
             <div className="card-body candidate-skip-card-body rounded pt-3" onClick={() => setSkip(skip)}>
                 <h5 className="mb-0">{skip.size} Yard</h5>
                 <p className="mb-1">${skip.price_before_vat} • {skip.hire_period_days} days</p>
-                <p className="m-0">On-Road: {skip.allowed_on_road ? <CheckCircle/> : <XCircleIcon/>}</p>
-                <p className="m-0">Heavy Waste: {skip.allows_heavy_waste ? <CheckCircle/> : <XCircleIcon/>} </p>
+                <p className="m-0">On-Road: {skip.allowed_on_road ? <CheckCircleIcon/> : <XCircleIcon/>}</p>
+                <p className="m-0">Heavy Waste: {skip.allows_heavy_waste ? <CheckCircleIcon/> : <XCircleIcon/>} </p>
             </div>
         </div>
     );
 }
 
-interface NearestSkipsProps {
+interface ClosestSkipsProps {
     currentSkip: SkipType;
     skips: SkipType[];
     setSkip: (skip: SkipType) => void;
 }
 
-const NearestSkips = ({ currentSkip, skips, setSkip }: NearestSkipsProps) => {
+const ClosestSkips = ({ currentSkip, skips, setSkip }: ClosestSkipsProps) => {
     
     const currentIndex = skips.findIndex(s => s.id === currentSkip.id);
     const prevSkip = currentIndex > 0 ? skips[currentIndex - 1] : null;
@@ -41,4 +41,4 @@ const NearestSkips = ({ currentSkip, skips, setSkip }: NearestSkipsProps) => {
     );
 }
 
-export default NearestSkips;
+export default ClosestSkips;
