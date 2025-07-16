@@ -12,7 +12,9 @@ interface Props {
 
 const Skip = ({ skip, skips, setSkip }: Props) => {
 
-    const skipImagePath = skip.size < 20 ? "../../public/8-yarder-skip.png" : "../../public/big-yarder-skip.png";
+    const skipImagePath = skip.size < 20
+        ? "/8-yarder-skip.png"
+        : "/big-yarder-skip.png";
     return (
         <div className="card mt-5 d-flex flex-row border-0 gap-1">
             <div className="card-img-wrapper"> 
